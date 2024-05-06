@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MR Technical Test</title>
+</head>
+<body class="">
+    <header>
+        <div class="container">
+            <div id="mini-cart" class="mini-cart">
+                <div class="icon-cart">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                    </svg>
+                    <span>0</span>
+                </div>
+                <ul id="cart-items" class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="product-details">
+            <div class="product-image">
+                <img src="images/classic-tee.jpg" alt="Classic Tee" width="200">
+            </div>
+            <div class="product-info">
+                <h2>Classic Tee</h2>
+                <h3><strong>$75.00</strong></h3>
+                <p>
+                    Dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione actum est, id officium appellamus dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione actum est, id officium appellamus
+                </p>
+                <form id="product-form">
+                    <label for="size">Size<span class="required">*</span></label>
+                    <div class="size-options">
+                        <label><input type="radio" name="size" value="S"><span>S</span></label>
+                        <label><input type="radio" name="size" value="M"><span>M</span></label>
+                        <label><input type="radio" name="size" value="L"><span>L</span></label>
+                        <label><input type="radio" name="size" value="XL"><span>XL</span></label>
+                    </div>
+                    <button type="submit" id="add-to-cart">Add to Cart</button>
+                    <p id="error-message" class="error-message"></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="cartTab">
+            <div class="close">X</div>
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
